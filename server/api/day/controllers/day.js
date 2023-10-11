@@ -155,7 +155,7 @@ module.exports = {
   },
 
   // Update day activity template
-  async activityTemplateUpdate(ctx) {
+  async demoTemplateUpdate(ctx) {
     // find the day
     const { id } = ctx.params;
     let day = await strapi.services.day.findOne({ id: id });
@@ -166,7 +166,7 @@ module.exports = {
       );
 
     // update template and blocks
-    day.activity_template = ctx.request.body.activity_template;
+    day.demo_template = ctx.request.body.demo_template;
 
     const updatedDay = await strapi.services.day.update({ id: id }, day);
     return sanitizeEntity(updatedDay, { model: strapi.models.day });

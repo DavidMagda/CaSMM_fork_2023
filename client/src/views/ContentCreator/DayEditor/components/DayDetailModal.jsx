@@ -93,7 +93,7 @@ const DayDetailModal = ({
     navigate("/day")
   }
 
-  const handleViewActivityTemplate = async day => {
+  const handleViewDemoTemplate = async day => {
     const allToolBoxRes = await getDayToolboxAll()
     delete day.selectedToolbox
     day.toolbox = allToolBoxRes.data.toolbox
@@ -140,7 +140,7 @@ const DayDetailModal = ({
         handleViewDayTemplate(res.data)
       } else if (submitButton === 2) {
         setDayDetailsVisible(false)
-        handleViewActivityTemplate(res.data)
+        handleViewDemoTemplate(res.data)
       }
     }
   }

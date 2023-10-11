@@ -43,7 +43,7 @@
       "via": "days",
       "collection": "learning-components"
     },
-    "activity_template": {
+    "demo_template": {
       "type": "text",
       "required": false
     }

@@ -62,9 +62,9 @@ export default function Home({ classroomId, viewing }) {
 
   const openActivityInWorkspace = (day, name) => {
     day.learning_standard_name = name;
-    day.template = day.activity_template;
+    day.template = day.demo_template;
     delete day.id;
-    delete day.activity_template;
+    delete day.demo_template;
     localStorage.setItem('sandbox-day', JSON.stringify(day));
     navigate('/sandbox');
   };
@@ -139,7 +139,7 @@ export default function Home({ classroomId, viewing }) {
                         >
                           Student Template
                         </button>
-                        {day.activity_template && (
+                        {day.demo_template && (
                           <button
                             id='view-day-button'
                             style={{marginRight: "200px"}}

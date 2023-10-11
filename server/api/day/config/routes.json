@@ -50,8 +50,8 @@
     },
     {
       "method": "PUT",
-      "path": "/days/activity_template/:id",
-      "handler": "day.activityTemplateUpdate",
+      "path": "/days/demo_template/:id",
+      "handler": "day.demoTemplateUpdate",
       "config": {
         "policies": []
       }

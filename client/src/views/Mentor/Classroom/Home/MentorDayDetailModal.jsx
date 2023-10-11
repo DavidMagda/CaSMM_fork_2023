@@ -23,7 +23,7 @@ const MentorDayDetailModal = ({
 }) => {
   const [description, setDescription] = useState("")
   const [template, setTemplate] = useState("")
-  const [activity_template, setActivityTemplate] = useState("")
+  const [demo_template, setDemoTemplate] = useState("")
   const [TekS, setTekS] = useState("")
   const [images, setImages] = useState("")
   const [link, setLink] = useState("")
@@ -45,7 +45,7 @@ const MentorDayDetailModal = ({
       }
       setDescription(response.data.description)
       setTemplate(response.data.template)
-      setActivityTemplate(response.data.activity_template)
+      setDemoTemplate(response.data.demo_template)
       setTekS(response.data.TekS)
       setImages(response.data.images)
       setLink(response.data.link)
@@ -94,7 +94,7 @@ const MentorDayDetailModal = ({
     navigate("/day")
   }
 
-  const handleViewActivityTemplate = async day => {
+  const handleViewDemoTemplate = async day => {
     const allToolBoxRes = await getDayToolboxAll()
     delete day.selectedToolbox
     day.toolbox = allToolBoxRes.data.toolbox
@@ -140,7 +140,7 @@ const MentorDayDetailModal = ({
         handleViewDayTemplate(res.data)
       } else if (submitButton === 2) {
         setDayDetailsVisible(false)
-        handleViewActivityTemplate(res.data)
+        handleViewDemoTemplate(res.data)
       }
     }
   }
@@ -216,8 +216,8 @@ const MentorDayDetailModal = ({
         </Form.Item>
         <Form.Item id="form-label" label="Mentor Template">
           <Input.TextArea
-            onChange={e => setActivityTemplate(e.target.value)}
-            value={activity_template}
+            onChange={e => setDemoTemplate(e.target.value)}
+            value={demo_template}
             //className="input"
             placeholder="Enter mentor code template"
           ></Input.TextArea>

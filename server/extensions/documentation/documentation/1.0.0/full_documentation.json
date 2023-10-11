@@ -3164,7 +3164,7 @@
         ]
       }
     },
-    "/days/activity_template/{id}": {
+    "/days/demo_template/{id}": {
       "put": {
         "deprecated": false,
         "description": "Update a record",
@@ -11931,7 +11931,7 @@
                   "type": "string"
                 }
               },
-              "activity_template": {
+              "demo_template": {
                 "type": "string"
               },
               "created_by": {
@@ -12486,7 +12486,7 @@
               }
             }
           },
-          "activity_template": {
+          "demo_template": {
             "type": "string"
           }
         }
@@ -12539,7 +12539,7 @@
               "type": "string"
             }
           },
-          "activity_template": {
+          "demo_template": {
             "type": "string"
           },
           "created_by": {
@@ -12835,7 +12835,7 @@
                     "type": "string"
                   }
                 },
-                "activity_template": {
+                "demo_template": {
                   "type": "string"
                 },
                 "created_by": {
@@ -12980,7 +12980,7 @@
                     "type": "string"
                   }
                 },
-                "activity_template": {
+                "demo_template": {
                   "type": "string"
                 },
                 "created_by": {
@@ -13326,7 +13326,7 @@
                   "type": "string"
                 }
               },
-              "activity_template": {
+              "demo_template": {
                 "type": "string"
               },
               "created_by": {
@@ -14412,7 +14412,7 @@
                   "type": "string"
                 }
               },
-              "activity_template": {
+              "demo_template": {
                 "type": "string"
               },
               "created_by": {

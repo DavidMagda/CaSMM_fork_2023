@@ -583,7 +583,7 @@
                     "type": "string"
                   }
                 },
-                "activity_template": {
+                "demo_template": {
                   "type": "string"
                 },
                 "created_by": {

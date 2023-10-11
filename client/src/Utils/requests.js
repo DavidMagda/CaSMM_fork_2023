@@ -342,12 +342,12 @@ export const updateDayTemplate = async (id, workspace, blocksList) =>
     error: 'Failed to update the template for the day',
   });
 
-export const updateActivityTemplate = async (id, workspace) =>
+export const updateDemoTemplate = async (id, workspace) =>
   makeRequest({
     method: PUT,
-    path: `${server}/days/activity_template/${id}`,
+    path: `${server}/days/demo_template/${id}`,
     data: {
-      activity_template: workspace,
+      demo_template: workspace,
       //blocks: blocksList,
     },
     auth: true,
@@ -470,7 +470,7 @@ export const updateDayDetails = async (
   id,
   description,
   // template,
-  // activity_template,
+  // demo_template,
   TekS,
   images,
   link,
@@ -484,7 +484,7 @@ export const updateDayDetails = async (
     data: {
       description,
       // template,
-      // activity_template,
+      // demo_template,
       TekS,
       images,
       images,

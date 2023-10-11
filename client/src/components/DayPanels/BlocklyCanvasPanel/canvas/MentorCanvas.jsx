@@ -60,7 +60,7 @@ export default function MentorCanvas({ day, isSandbox, setDay,  isMentorActivity
         //   window.Blockly.Xml.domToWorkspace(xml, workspaceRef.current);
         // }
         let xml = isMentorActivity
-        ? window.Blockly.Xml.textToDom(day.activity_template)
+        ? window.Blockly.Xml.textToDom(day.demo_template)
         : window.Blockly.Xml.textToDom(day.template);
       window.Blockly.Xml.domToWorkspace(xml, workspaceRef.current);
         workspaceRef.current.clearUndo();

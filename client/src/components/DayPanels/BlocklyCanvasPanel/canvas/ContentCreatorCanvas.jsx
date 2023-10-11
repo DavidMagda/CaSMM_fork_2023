@@ -128,7 +128,7 @@ export default function ContentCreatorCanvas({
         setWorkspace();
 
         let xml = isMentorActivity
-          ? window.Blockly.Xml.textToDom(day.activity_template)
+          ? window.Blockly.Xml.textToDom(day.demo_template)
           : window.Blockly.Xml.textToDom(day.template);
         window.Blockly.Xml.domToWorkspace(xml, workspaceRef.current);
         workspaceRef.current.clearUndo();

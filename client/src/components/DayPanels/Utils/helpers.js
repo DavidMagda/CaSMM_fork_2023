@@ -5,7 +5,7 @@ import {
   updateDayTemplate,
   createAuthorizedWorkspace,
   updateAuthorizedWorkspace,
-  updateActivityTemplate,
+  updateDemoTemplate,
 } from '../../../Utils/requests';
 import { message } from 'antd';
 
@@ -203,7 +203,7 @@ export const handleCreatorSaveActivity = async (dayId, workspaceRef) => {
   let xml = window.Blockly.Xml.workspaceToDom(workspaceRef.current);
   let xml_text = window.Blockly.Xml.domToText(xml);
 
-  return await updateActivityTemplate(dayId, xml_text);
+  return await updateDemoTemplate(dayId, xml_text);
 };
 
 export const handleSaveAsWorkspace = async (
